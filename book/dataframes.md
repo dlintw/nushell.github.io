@@ -971,7 +971,7 @@ dataframes.
 To find all lazy dataframe operations you can use
 
 ```nu
-$nu.scope.commands | where category =~ lazyframe
+scope commands | where category =~ lazyframe | select name
 ```
 
 With your lazy frame defined we can start chaining operations on it. For
